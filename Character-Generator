@@ -1,4 +1,4 @@
-using System;
+uusing System;
 
 namespace DrD_postavy
 {
@@ -756,6 +756,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + charisma + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "kouzelnik")
                     {
@@ -1000,6 +1002,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "zlodej")
                     {
@@ -1244,6 +1248,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                 }
@@ -1988,6 +1994,7 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + charisma + "/" + oprava);
                         }
+                        Console.ReadLine();
                         Console.Clear();
                     }
                     if (zamereni == "kouzelnik")
@@ -2232,6 +2239,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + charisma + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "zlodej")
                     {
@@ -2475,6 +2484,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + charisma + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
 
@@ -3466,6 +3477,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "zlodej")
                     {
@@ -3710,7 +3723,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
-
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                 }
@@ -4700,6 +4714,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "zlodej")
                     {
@@ -4944,6 +4960,8 @@ namespace DrD_postavy
                             int oprava = 4;
                             Console.WriteLine("charisma je " + opravach + "/" + oprava);
                         }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                 }
