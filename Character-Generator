@@ -1,4 +1,4 @@
-uusing System;
+using System;
 
 namespace DrD_postavy
 {
@@ -4965,29 +4965,1199 @@ namespace DrD_postavy
                     }
 
                 }
-                if (rasa == "človek")
+                if (rasa == "clovek")
                 {
                     Console.WriteLine("Vaše rasa je " + rasa + ", vyberte povolání: Válečník, Hraničář, Alchymista, Kouzelník, Zloděj");
+                    Console.WriteLine("Pokud vám to napíše 2x sílu, tak toto je bug, který stále řešíme a omlouváme se za něj, vždy použijte tu druhou. Děkujeme za pochopení");
                     string zamereni = Console.ReadLine();
+                    Console.Clear();
                     if (zamereni == "valecnik")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+                        int síla = rnd.Next(13, 18);
+                        int obratnost = rnd.Next(9, 14);
+                        int odolnost = rnd.Next(13, 18);
+                        int inteligence = rnd.Next(10, 15);
+                        int charisma = rnd.Next(2, 17);
+
+                        if ((síla == 13) || (síla == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 15) || (síla == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 17) || (síla == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+
+                        //tady obratnost
+                        if ((obratnost == 2) || (obratnost == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 4) || (obratnost == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 6) || (obratnost == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 8) || (obratnost == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 10) || (obratnost == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 13) || (obratnost == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 15) || (obratnost == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 17) || (obratnost == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 19) || (obratnost == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+
+                        //odolnost
+                        if ((odolnost == 2) || (odolnost == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 4) || (odolnost == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 6) || (odolnost == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 8) || (odolnost == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 10) || (odolnost == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 13) || (odolnost == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 15) || (odolnost == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 17) || (odolnost == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 19) || (odolnost == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+
+                        //inteligence
+                        if ((inteligence == 2) || (inteligence == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 4) || (inteligence == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 6) || (inteligence == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 8) || (inteligence == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 10) || (inteligence == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 13) || (inteligence == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 15) || (inteligence == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 17) || (inteligence == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 19) || (inteligence == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+
+                        //charisma
+                        if ((charisma == 2) || (charisma == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 4) || (charisma == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 6) || (charisma == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 8) || (charisma == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 10) || (charisma == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 13) || (charisma == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 15) || (charisma == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 17) || (charisma == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 19) || (charisma == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "hranicar")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+                        int síla = rnd.Next(11, 16);
+                        int obratnost = rnd.Next(9, 14);
+                        int odolnost = rnd.Next(9, 14);
+                        int inteligence = rnd.Next(12, 17);
+                        int charisma = rnd.Next(2, 17);
+                        if ((síla == 2) || (síla == 3)) ;
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 4) || (síla == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 6) || (síla == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 8) || (síla == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 10) || (síla == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 13) || (síla == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 15) || (síla == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 17) || (síla == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 19) || (síla == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        //tady obratnost
+                        if ((obratnost == 2) || (obratnost == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 4) || (obratnost == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 6) || (obratnost == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 8) || (obratnost == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 10) || (obratnost == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 13) || (obratnost == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 15) || (obratnost == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 17) || (obratnost == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 19) || (obratnost == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+
+                        //odolnost
+                        if ((odolnost == 2) || (odolnost == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 4) || (odolnost == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 6) || (odolnost == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 8) || (odolnost == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 10) || (odolnost == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 13) || (odolnost == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 15) || (odolnost == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 17) || (odolnost == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 19) || (odolnost == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+
+                        //inteligence
+                        if ((inteligence == 2) || (inteligence == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 4) || (inteligence == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 6) || (inteligence == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 8) || (inteligence == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 10) || (inteligence == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 13) || (inteligence == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 15) || (inteligence == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 17) || (inteligence == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 19) || (inteligence == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+
+                        //charisma
+                        if ((charisma == 2) || (charisma == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 4) || (charisma == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 6) || (charisma == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 8) || (charisma == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 10) || (charisma == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 13) || (charisma == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 15) || (charisma == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 17) || (charisma == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 19) || (charisma == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "alchymista")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+                        int síla = rnd.Next(6, 16);
+                        int obratnost = rnd.Next(13, 18);
+                        int odolnost = rnd.Next(12, 17);
+                        int inteligence = rnd.Next(10, 15);
+                        int charisma = rnd.Next(2, 17);
+                        if ((síla == 2) || (síla == 3)) ;
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 4) || (síla == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 6) || (síla == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 8) || (síla == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 10) || (síla == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 13) || (síla == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 15) || (síla == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 17) || (síla == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 19) || (síla == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        //tady obratnost
+                        if ((obratnost == 2) || (obratnost == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 4) || (obratnost == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 6) || (obratnost == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 8) || (obratnost == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 10) || (obratnost == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 13) || (obratnost == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 15) || (obratnost == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 17) || (obratnost == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 19) || (obratnost == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+
+                        //odolnost
+                        if ((odolnost == 2) || (odolnost == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 4) || (odolnost == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 6) || (odolnost == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 8) || (odolnost == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 10) || (odolnost == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 13) || (odolnost == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 15) || (odolnost == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 17) || (odolnost == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 19) || (odolnost == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+
+                        //inteligence
+                        if ((inteligence == 2) || (inteligence == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 4) || (inteligence == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 6) || (inteligence == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 8) || (inteligence == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 10) || (inteligence == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 13) || (inteligence == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 15) || (inteligence == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 17) || (inteligence == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 19) || (inteligence == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+
+                        //charisma
+                        if ((charisma == 2) || (charisma == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 4) || (charisma == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 6) || (charisma == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 8) || (charisma == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 10) || (charisma == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 13) || (charisma == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 15) || (charisma == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 17) || (charisma == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 19) || (charisma == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "kouzelnik")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+                        int síla = rnd.Next(6, 16);
+                        int obratnost = rnd.Next(9, 14);
+                        int odolnost = rnd.Next(9, 14);
+                        int inteligence = rnd.Next(14, 19);
+                        int charisma = rnd.Next(13, 18);
+                        if ((síla == 2) || (síla == 3)) ;
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 4) || (síla == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 6) || (síla == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 8) || (síla == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 10) || (síla == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 13) || (síla == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 15) || (síla == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 17) || (síla == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 19) || (síla == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        //tady obratnost
+                        if ((obratnost == 2) || (obratnost == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 4) || (obratnost == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 6) || (obratnost == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 8) || (obratnost == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 10) || (obratnost == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 13) || (obratnost == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 15) || (obratnost == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 17) || (obratnost == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 19) || (obratnost == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+
+                        //odolnost
+                        if ((odolnost == 2) || (odolnost == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 4) || (odolnost == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 6) || (odolnost == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 8) || (odolnost == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 10) || (odolnost == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 13) || (odolnost == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 15) || (odolnost == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 17) || (odolnost == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 19) || (odolnost == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+
+                        //inteligence
+                        if ((inteligence == 2) || (inteligence == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 4) || (inteligence == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 6) || (inteligence == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 8) || (inteligence == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 10) || (inteligence == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 13) || (inteligence == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 15) || (inteligence == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 17) || (inteligence == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 19) || (inteligence == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+
+                        //charisma
+                        if ((charisma == 2) || (charisma == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 4) || (charisma == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 6) || (charisma == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 8) || (charisma == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 10) || (charisma == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 13) || (charisma == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 15) || (charisma == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 17) || (charisma == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 19) || (charisma == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
                     if (zamereni == "zlodej")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+                        Console.Clear();
+                        int síla = rnd.Next(6, 16);
+                        int obratnost = rnd.Next(14, 19);
+                        int odolnost = rnd.Next(9, 14);
+                        int inteligence = rnd.Next(10, 15);
+                        int charisma = rnd.Next(12, 17);
+                        if ((síla == 2) || (síla == 3)) ;
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 4) || (síla == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 6) || (síla == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 8) || (síla == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 10) || (síla == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 13) || (síla == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 15) || (síla == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 17) || (síla == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        if ((síla == 19) || (síla == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("síla je " + síla + "/" + oprava);
+                        }
+                        //tady obratnost
+                        if ((obratnost == 2) || (obratnost == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 4) || (obratnost == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 6) || (obratnost == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 8) || (obratnost == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 10) || (obratnost == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 13) || (obratnost == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 15) || (obratnost == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 17) || (obratnost == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+                        if ((obratnost == 19) || (obratnost == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("obratnost je " + obratnost + "/" + oprava);
+                        }
+
+                        //odolnost
+                        if ((odolnost == 2) || (odolnost == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 4) || (odolnost == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 6) || (odolnost == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 8) || (odolnost == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 10) || (odolnost == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 13) || (odolnost == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 15) || (odolnost == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 17) || (odolnost == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+                        if ((odolnost == 19) || (odolnost == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("odolnost je " + odolnost + "/" + oprava);
+                        }
+
+                        //inteligence
+                        if ((inteligence == 2) || (inteligence == 3))
+                        {
+                            string oprava = "-4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 4) || (inteligence == 5))
+                        {
+                            string oprava = "-3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 6) || (inteligence == 7))
+                        {
+                            string oprava = "-2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 8) || (inteligence == 9))
+                        {
+                            string oprava = "-1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 10) || (inteligence == 12))
+                        {
+                            string oprava = "0";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 13) || (inteligence == 14))
+                        {
+                            string oprava = "+1";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 15) || (inteligence == 16))
+                        {
+                            string oprava = "+2";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 17) || (inteligence == 18))
+                        {
+                            string oprava = "+3";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+                        if ((inteligence == 19) || (inteligence == 20))
+                        {
+                            string oprava = "4";
+                            Console.WriteLine("inteligence je " + inteligence + "/" + oprava);
+                        }
+
+                        //charisma
+                        if ((charisma == 2) || (charisma == 3))
+                        {
+                            int oprava = -4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 4) || (charisma == 5))
+                        {
+                            int oprava = -3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 6) || (charisma == 7))
+                        {
+                            int oprava = -2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 8) || (charisma == 9))
+                        {
+                            int oprava = -1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 10) || (charisma == 12))
+                        {
+                            int oprava = 0;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 13) || (charisma == 14))
+                        {
+                            int oprava = +1;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 15) || (charisma == 16))
+                        {
+                            int oprava = +2;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 17) || (charisma == 18))
+                        {
+                            int oprava = +3;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        if ((charisma == 19) || (charisma == 20))
+                        {
+                            int oprava = 4;
+                            Console.WriteLine("charisma je " + charisma + "/" + oprava);
+                        }
+                        Console.ReadLine();
+                        Console.Clear();
                     }
 
                 }
@@ -5014,6 +6184,7 @@ namespace DrD_postavy
                     if (zamereni == "zlodej")
                     {
                         Console.WriteLine("Vaše rasa je " + rasa + ", vaše povolání je " + zamereni);
+
                     }
 
                 }
